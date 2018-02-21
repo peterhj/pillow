@@ -43,6 +43,7 @@ j2k_error(const char *msg, void *client_data)
 /* Buffer input stream                                                  */
 /* -------------------------------------------------------------------- */
 
+#ifndef PILLOW_DISABLE_PYTHON
 static OPJ_SIZE_T
 j2k_read(void *p_buffer, OPJ_SIZE_T p_nb_bytes, void *p_user_data)
 {
@@ -64,6 +65,7 @@ j2k_skip(OPJ_OFF_T p_nb_bytes, void *p_user_data)
 
     return pos ? pos : (OPJ_OFF_T)-1;
 }
+#endif
 
 /* -------------------------------------------------------------------- */
 /* Unpackers                                                            */

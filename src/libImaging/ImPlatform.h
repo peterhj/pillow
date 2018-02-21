@@ -7,11 +7,13 @@
  * Copyright (c) Fredrik Lundh 1995-2003.
  */
 
+#ifndef PILLOW_DISABLE_PYTHON
 #include "Python.h"
 
 /* Workaround issue #2479 */
 #if PY_VERSION_HEX < 0x03070000 && defined(PySlice_GetIndicesEx) && !defined(PYPY_VERSION)
 #undef PySlice_GetIndicesEx
+#endif
 #endif
 
 /* Check that we have an ANSI compliant compiler */

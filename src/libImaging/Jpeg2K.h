@@ -47,6 +47,7 @@ typedef struct {
 /* Encoder								*/
 /* -------------------------------------------------------------------- */
 
+#ifndef PILLOW_DISABLE_PYTHON
 typedef struct {
     /* CONFIGURATION */
 
@@ -93,6 +94,7 @@ typedef struct {
 
 
 } JPEG2KENCODESTATE;
+#endif
 
 /*
  * Local Variables:

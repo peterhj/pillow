@@ -88,6 +88,7 @@ static int expandrow2(UINT16* dest, UINT16* src, int n, int z)
 }
 
 
+#ifndef PILLOW_DISABLE_PYTHON
 int
 ImagingSgiRleDecode(Imaging im, ImagingCodecState state,
 		    UINT8* buf, int bytes)
@@ -186,3 +187,4 @@ sgi_finish_decode: ;
     }
     return state->count - c->bufsize;
 }
+#endif
