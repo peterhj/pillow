@@ -23,6 +23,10 @@
 #ifndef STDC_HEADERS
 #error Sorry, this library requires ANSI header files.
 #endif
+#include <limits.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
 #if defined(PIL_NO_INLINE)
 #define inline
