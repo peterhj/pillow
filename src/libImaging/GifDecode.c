@@ -58,7 +58,7 @@
 
 
 int
-ImagingGifDecode(Imaging im, ImagingCodecState state, UINT8* buffer, int bytes)
+ImagingGifDecode(Imaging im, ImagingCodecState state, const UINT8* buffer, int bytes)
 {
     UINT8* p;
     UINT8* out;

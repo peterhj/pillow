@@ -771,7 +771,7 @@ j2k_decode_entry(Imaging im, ImagingCodecState state)
 }
 
 int
-ImagingJpeg2KDecode(Imaging im, ImagingCodecState state, UINT8* buf, int bytes)
+ImagingJpeg2KDecode(Imaging im, ImagingCodecState state, const UINT8* buf, int bytes)
 {
 
     if (bytes){

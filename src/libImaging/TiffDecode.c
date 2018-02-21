@@ -168,7 +168,7 @@ int ImagingLibTiffInit(ImagingCodecState state, int fp, int offset) {
     return 1;
 }
 
-int ImagingLibTiffDecode(Imaging im, ImagingCodecState state, UINT8* buffer, int bytes) {
+int ImagingLibTiffDecode(Imaging im, ImagingCodecState state, const UINT8* buffer, int bytes) {
 	TIFFSTATE *clientstate = (TIFFSTATE *)state->context;
 	char *filename = "tempfile.tif";
 	char *mode = "r";

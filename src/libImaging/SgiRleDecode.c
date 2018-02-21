@@ -91,7 +91,7 @@ static int expandrow2(UINT16* dest, UINT16* src, int n, int z)
 #ifndef PILLOW_DISABLE_PYTHON
 int
 ImagingSgiRleDecode(Imaging im, ImagingCodecState state,
-		    UINT8* buf, int bytes)
+		    const UINT8* buf, int bytes)
 {
     UINT8 *ptr;
     SGISTATE *c;

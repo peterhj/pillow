@@ -24,7 +24,7 @@
 
 
 int
-ImagingPcdDecode(Imaging im, ImagingCodecState state, UINT8* buf, int bytes)
+ImagingPcdDecode(Imaging im, ImagingCodecState state, const UINT8* buf, int bytes)
 {
     int x;
     int chunk;

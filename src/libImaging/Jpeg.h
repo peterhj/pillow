@@ -27,7 +27,7 @@ typedef struct {
     int skip;
 } JPEGSOURCE;
 
-typedef struct {
+typedef struct JPEGSTATE_T {
 
     /* CONFIGURATION */
 

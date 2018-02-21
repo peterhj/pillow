@@ -20,7 +20,7 @@
 
 int
 ImagingTgaRleDecode(Imaging im, ImagingCodecState state,
-		    UINT8* buf, int bytes)
+		    const UINT8* buf, int bytes)
 {
     int n, depth;
     UINT8* ptr;

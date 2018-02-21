@@ -410,22 +410,22 @@ typedef int (*ImagingCodec)(Imaging im, ImagingCodecState state,
                             UINT8* buffer, int bytes);
 
 extern int ImagingBcnDecode(Imaging im, ImagingCodecState state,
-                            UINT8* buffer, int bytes);
+                            const UINT8* buffer, int bytes);
 extern int ImagingBitDecode(Imaging im, ImagingCodecState state,
-                            UINT8* buffer, int bytes);
+                            const UINT8* buffer, int bytes);
 extern int ImagingEpsEncode(Imaging im, ImagingCodecState state,
                             UINT8* buffer, int bytes);
 extern int ImagingFliDecode(Imaging im, ImagingCodecState state,
-                            UINT8* buffer, int bytes);
+                            const UINT8* buffer, int bytes);
 extern int ImagingGifDecode(Imaging im, ImagingCodecState state,
-                            UINT8* buffer, int bytes);
+                            const UINT8* buffer, int bytes);
 extern int ImagingGifEncode(Imaging im, ImagingCodecState state,
                             UINT8* buffer, int bytes);
 extern int ImagingHexDecode(Imaging im, ImagingCodecState state,
-                            UINT8* buffer, int bytes);
+                            const UINT8* buffer, int bytes);
 #ifdef  HAVE_LIBJPEG
 extern int ImagingJpegDecode(Imaging im, ImagingCodecState state,
-                             UINT8* buffer, int bytes);
+                             const UINT8* buffer, int bytes);
 extern int ImagingJpegDecodeCleanup(ImagingCodecState state);
 extern int ImagingJpegUseJCSExtensions(void);
 
@@ -434,7 +434,7 @@ extern int ImagingJpegEncode(Imaging im, ImagingCodecState state,
 #endif
 #ifdef HAVE_OPENJPEG
 extern int ImagingJpeg2KDecode(Imaging im, ImagingCodecState state,
-                               UINT8* buffer, int bytes);
+                               const UINT8* buffer, int bytes);
 extern int ImagingJpeg2KDecodeCleanup(ImagingCodecState state);
 extern int ImagingJpeg2KEncode(Imaging im, ImagingCodecState state,
                                UINT8* buffer, int bytes);
@@ -442,42 +442,42 @@ extern int ImagingJpeg2KEncodeCleanup(ImagingCodecState state);
 #endif
 #ifdef  HAVE_LIBTIFF
 extern int ImagingLibTiffDecode(Imaging im, ImagingCodecState state,
-                                UINT8* buffer, int bytes);
+                                const UINT8* buffer, int bytes);
 extern int ImagingLibTiffEncode(Imaging im, ImagingCodecState state,
                                 UINT8* buffer, int bytes);
 #endif
 #ifdef  HAVE_LIBMPEG
 extern int ImagingMpegDecode(Imaging im, ImagingCodecState state,
-                             UINT8* buffer, int bytes);
+                             const UINT8* buffer, int bytes);
 #endif
 extern int ImagingMspDecode(Imaging im, ImagingCodecState state,
-                            UINT8* buffer, int bytes);
+                            const UINT8* buffer, int bytes);
 extern int ImagingPackbitsDecode(Imaging im, ImagingCodecState state,
-                                 UINT8* buffer, int bytes);
+                                 const UINT8* buffer, int bytes);
 extern int ImagingPcdDecode(Imaging im, ImagingCodecState state,
-                            UINT8* buffer, int bytes);
+                            const UINT8* buffer, int bytes);
 extern int ImagingPcxDecode(Imaging im, ImagingCodecState state,
-                            UINT8* buffer, int bytes);
+                            const UINT8* buffer, int bytes);
 extern int ImagingPcxEncode(Imaging im, ImagingCodecState state,
                             UINT8* buffer, int bytes);
 extern int ImagingRawDecode(Imaging im, ImagingCodecState state,
-                            UINT8* buffer, int bytes);
+                            const UINT8* buffer, int bytes);
 extern int ImagingRawEncode(Imaging im, ImagingCodecState state,
                             UINT8* buffer, int bytes);
 extern int ImagingSgiRleDecode(Imaging im, ImagingCodecState state,
-                               UINT8* buffer, int bytes);
+                               const UINT8* buffer, int bytes);
 extern int ImagingSgiRleDecodeCleanup(ImagingCodecState state);
 extern int ImagingSunRleDecode(Imaging im, ImagingCodecState state,
-                               UINT8* buffer, int bytes);
+                               const UINT8* buffer, int bytes);
 extern int ImagingTgaRleDecode(Imaging im, ImagingCodecState state,
-                               UINT8* buffer, int bytes);
+                               const UINT8* buffer, int bytes);
 extern int ImagingXbmDecode(Imaging im, ImagingCodecState state,
-                            UINT8* buffer, int bytes);
+                            const UINT8* buffer, int bytes);
 extern int ImagingXbmEncode(Imaging im, ImagingCodecState state,
                             UINT8* buffer, int bytes);
 #ifdef  HAVE_LIBZ
 extern int ImagingZipDecode(Imaging im, ImagingCodecState state,
-                            UINT8* buffer, int bytes);
+                            const UINT8* buffer, int bytes);
 extern int ImagingZipDecodeCleanup(ImagingCodecState state);
 extern int ImagingZipEncode(Imaging im, ImagingCodecState state,
                             UINT8* buffer, int bytes);

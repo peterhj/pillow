@@ -26,7 +26,7 @@
 
 
 int
-ImagingFliDecode(Imaging im, ImagingCodecState state, UINT8* buf, int bytes)
+ImagingFliDecode(Imaging im, ImagingCodecState state, const UINT8* buf, int bytes)
 {
     UINT8* ptr;
     int framesize;

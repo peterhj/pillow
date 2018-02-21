@@ -20,7 +20,7 @@
 
 
 int
-ImagingBitDecode(Imaging im, ImagingCodecState state, UINT8* buf, int bytes)
+ImagingBitDecode(Imaging im, ImagingCodecState state, const UINT8* buf, int bytes)
 {
     BITSTATE* bitstate = state->context;
     UINT8* ptr;

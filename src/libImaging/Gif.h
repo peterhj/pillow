@@ -16,7 +16,7 @@
 #define	GIFBUFFER   (1<<GIFBITS)
 
 
-typedef struct {
+typedef struct GIFDECODERSTATE_T {
 
     /* CONFIGURATION */
 

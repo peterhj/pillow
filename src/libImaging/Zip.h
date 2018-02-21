@@ -18,7 +18,7 @@
 #define	ZIP_TIFF 3		/* TIFF, without predictor */
 
 
-typedef struct {
+typedef struct ZIPSTATE_T {
 
     /* CONFIGURATION */
 
